@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+\usepackage{fontspec}
+\setmainfont{Raleway}[BoldFont={Raleway Bold}]
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Shubham Tiwari} \\ \vspace{1pt}
+    \small +91 7477054977 $|$ \href{mailto: shubhamtiwaridevlog@gmail.com}{\underline{shubhamtiwaridevlog@gmail.com}} $|$ 
+    \href{https://portfolio-shubham-dusky.vercel.app/}{\underline{Portfolio}} $|$
+    \href{https://www.linkedin.com/in/shubham-dev-tiwari/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/shubham-dev-tiwari}{\underline{Github}}
+\end{center}
+
+
+%-----------Summary-----------
+\section{About me}
+  \resumeSubHeadingListStart
+    \resumeItem{Frontend Developer experienced in building scalable, responsive apps using React.js, Redux, JavaScript, Node.js, HTML, CSS, GraphQL, and Svelte. Delivered production-ready projects like e-commerce platforms and interactive UI clones. Skilled in API integration, performance optimization, Docker, Git workflows, and cloud (AWS).}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM University}{Sonepat, Haryana}
+      {Bachelor in Technology in Computer Science and Engineering (Overall CGPA: 8.06)}{Graduated}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2.5pt]
+    \small{\item{\textbf{Languages}{: JavaScript (Core \& OOP), GoLang, Python, C/C++, HTML, CSS, Tailwind CSS}}}
+    \small{\item{\textbf{Developer Tools}{: Git, Docker, Linux, Webpack, NPM/Yarn}}}
+    \small{\item{\textbf{Frameworks}{: React.js, Redux, React Router, Next.js, GraphQL, Svelte, Node.js, Express.js,
+Framer-motion}}}
+    \small{\item{\textbf{Other Skills}{: AWS (basic), Microservices (exposure), REST APIs, Performance Optimization, BurpSuite, Nmap}}}
+\end{itemize}
+
+%-----------WorkExperience-----
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Nuvé} $|$ \emph{Female cosmetic E-commerce}}{Jan 2025 - Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and programmed a boss rush game within 15-days for Boss Rush Game Jam 2025.}
+            \resumeItem{Conceptualized story and core gameplay mechanics, including player movement, combat, and enemy attacks.}
+             \resumeItem{Developed the boss AI (Elecia) with multiple states: Idle, Movement, Dash, Projectile Attack, and Spell Attack.}
+             \resumeItem{Implemented the player character system, handling movement, dashing, and attack mechanics.}
+            \resumeItem{Implemented Procedural Level Generation.}
+            \resumeItem{Collaborated with a small team.}
+            \resumeItem{\textbf{Technologies Used:} Unity, C\#.}
+            \resumeItem{\textbf{Design Pattern:} Singleton, State Machines, Service Locator Architecture.}
+            \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Ignorance} $|$ \emph{Programmer}}{December 2024 - Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Designed the game as an experiment to observe if players, given complete freedom, could uncover hidden truths or remain constrained by the developer’s imagination.}
+             \resumeItem{Created a minimalist gameplay experience with no guides, objectives, or traditional markers}
+             \resumeItem{Crafted multiple endings based on player choices and interactions, emphasizing free will and discovery}
+             \resumeItem{\textbf{Technologies Used:} Unity, C\#}
+             \resumeItem{\textbf{Design Pattern:} Observer, Singleton, Service-Client Architecture.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Evolution Simulator } $|$ \emph{Programmer}}{May 2023 - June 2023}
+          \resumeItemListStart
+            \resumeItem{Evolution of virtual creatures through multiple generations}
+            \resumeItem{Combined principles of genetic algorithms and neural networks to optimize intelligent systems.}
+            \resumeItem{\textbf{Technology Used:} Unity Engine, C\#}
+            \resumeItem{\textbf{Algorithms Used:} Deep Learning, Genetic Algorithm}
+            % \newline
+            \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Nuvé} $|$ \emph{Female cosmetic E-commerce}}{Jan 2025 - Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and programmed a boss rush game within 15-days for Boss Rush Game Jam 2025.}
+            \resumeItem{Conceptualized story and core gameplay mechanics, including player movement, combat, and enemy attacks.}
+             \resumeItem{Developed the boss AI (Elecia) with multiple states: Idle, Movement, Dash, Projectile Attack, and Spell Attack.}
+             \resumeItem{Implemented the player character system, handling movement, dashing, and attack mechanics.}
+            \resumeItem{Implemented Procedural Level Generation.}
+            \resumeItem{Collaborated with a small team.}
+            \resumeItem{\textbf{Technologies Used:} Unity, C\#.}
+            \resumeItem{\textbf{Design Pattern:} Singleton, State Machines, Service Locator Architecture.}
+            \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Ignorance} $|$ \emph{Programmer}}{December 2024 - Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Designed the game as an experiment to observe if players, given complete freedom, could uncover hidden truths or remain constrained by the developer’s imagination.}
+             \resumeItem{Created a minimalist gameplay experience with no guides, objectives, or traditional markers}
+             \resumeItem{Crafted multiple endings based on player choices and interactions, emphasizing free will and discovery}
+             \resumeItem{\textbf{Technologies Used:} Unity, C\#}
+             \resumeItem{\textbf{Design Pattern:} Observer, Singleton, Service-Client Architecture.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Evolution Simulator } $|$ \emph{Programmer}}{May 2023 - June 2023}
+          \resumeItemListStart
+            \resumeItem{Evolution of virtual creatures through multiple generations}
+            \resumeItem{Combined principles of genetic algorithms and neural networks to optimize intelligent systems.}
+            \resumeItem{\textbf{Technology Used:} Unity Engine, C\#}
+            \resumeItem{\textbf{Algorithms Used:} Deep Learning, Genetic Algorithm}
+            % \newline
+            \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+%-------CERTIFICATIONS---------------
+%\section{Certifications}
+% \begin{itemize}
+% \item \textbf{SoloLearn:}  C++, Python, HTML, SQL.
+% \end{itemize}
+%\begin{itemize}
+%\item \textbf{Udemy:}  Simple golang projects by Akhil Sharma.
+%\end{itemize}
+
+
+%---------------Achievements-------------
+%\section{Achievements}
+%\begin{itemize}   
+    %\item \textbf{under 20K on HackerRank}
+ %\end{itemize}
+
+%-------------------------------------------
+
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     {English} \\
+     {Hindi} \\
+    }}
+ \end{itemize}
+
+\end{document}
