@@ -1,4 +1,4 @@
-// app/mock-tests/page.js - NEW FILE
+
 'use client';
 
 import { useState } from 'react';
@@ -83,7 +83,7 @@ export default function MockTestsPage() {
       <Navbar />
       
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 pt-24">
-        {/* Hero Section */}
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -121,7 +121,7 @@ export default function MockTestsPage() {
                 />
               </div>
 
-              {/* Filter */}
+
               <select
                 value={selectedFilter}
                 onChange={(e) => setSelectedFilter(e.target.value)}
@@ -136,7 +136,7 @@ export default function MockTestsPage() {
             </div>
           </motion.div>
 
-          {/* Tests Grid */}
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTests.map((test, index) => (
               <motion.div
@@ -160,7 +160,6 @@ export default function MockTestsPage() {
                     </div>
                   )}
 
-                  {/* Header */}
                   <div className="mb-4">
                     <div
                       className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
@@ -177,7 +176,7 @@ export default function MockTestsPage() {
                     </p>
                   </div>
 
-                  {/* Stats */}
+
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Clock className="w-4 h-4 text-gray-400" strokeWidth={2.5} />
@@ -197,7 +196,7 @@ export default function MockTestsPage() {
                     </div>
                   </div>
 
-                  {/* Difficulty Badge */}
+
                   <div className="mb-4">
                     <span
                       className="inline-block px-3 py-1 rounded-full text-xs font-bold"
@@ -210,7 +209,7 @@ export default function MockTestsPage() {
                     </span>
                   </div>
 
-                  {/* CTA Button */}
+     
                   <Link href={`/test-instructions/${test.id}`} className="mt-auto">
                     <motion.button
                       whileHover={{ scale: 1.02 }}
@@ -230,7 +229,6 @@ export default function MockTestsPage() {
             ))}
           </div>
 
-          {/* No Results */}
           {filteredTests.length === 0 && (
             <motion.div
               initial={{ opacity: 0 }}
