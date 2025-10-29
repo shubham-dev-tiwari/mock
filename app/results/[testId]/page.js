@@ -1,4 +1,4 @@
-// app/results/[testId]/page.js
+
 'use client';
 
 import { useState } from 'react';
@@ -67,7 +67,7 @@ export default function ResultsPage({ params }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
-      {/* Header */}
+
       <div 
         className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b"
         style={{ borderColor: 'rgba(16, 185, 129, 0.2)' }}
@@ -91,7 +91,7 @@ export default function ResultsPage({ params }) {
       </div>
 
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-        {/* Score Card */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function ResultsPage({ params }) {
             background: 'linear-gradient(135deg, #10B981 0%, #047857 100%)',
           }}
         >
-          {/* Decorative elements */}
+
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
 
@@ -158,8 +158,7 @@ export default function ResultsPage({ params }) {
           </div>
         </motion.div>
 
-        {/* Quick Actions */}
-        <motion.div
+      <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -193,14 +192,14 @@ export default function ResultsPage({ params }) {
           })}
         </motion.div>
 
-        {/* Performance Overview */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="grid lg:grid-cols-2 gap-6 mb-6"
         >
-          {/* Question Analysis */}
+
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <h3 className="text-xl font-black text-black mb-6 flex items-center gap-2">
               <Target className="w-6 h-6" style={{ color: '#10B981' }} strokeWidth={2.5} />
@@ -242,7 +241,7 @@ export default function ResultsPage({ params }) {
             </div>
           </div>
 
-          {/* Time Analysis */}
+
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <h3 className="text-xl font-black text-black mb-6 flex items-center gap-2">
               <Clock className="w-6 h-6" style={{ color: '#10B981' }} strokeWidth={2.5} />
@@ -274,7 +273,7 @@ export default function ResultsPage({ params }) {
           </div>
         </motion.div>
 
-        {/* Subject-wise Performance */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -337,14 +336,14 @@ export default function ResultsPage({ params }) {
           </div>
         </motion.div>
 
-        {/* Strengths & Weaknesses */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="grid md:grid-cols-2 gap-6 mb-6"
         >
-          {/* Strengths */}
+
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <h3 className="text-xl font-black text-black mb-6 flex items-center gap-2">
               <Award className="w-6 h-6" style={{ color: '#10B981' }} strokeWidth={2.5} />
@@ -380,7 +379,7 @@ export default function ResultsPage({ params }) {
             </div>
           </div>
 
-          {/* Weaknesses */}
+  
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <h3 className="text-xl font-black text-black mb-6 flex items-center gap-2">
               <TrendingUp className="w-6 h-6" style={{ color: '#EF4444' }} strokeWidth={2.5} />
@@ -417,7 +416,7 @@ export default function ResultsPage({ params }) {
           </div>
         </motion.div>
 
-        {/* Action Buttons */}
+  
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
